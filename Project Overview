@@ -1,0 +1,177 @@
+The main objective is to convert raw e-commerce transaction data into meaningful business insights using Power BI.
+
+The project follows this overall process:
+
+Business Understanding → Data Understanding → Data Cleaning → Data Modeling → KPI Definition → DAX → Dashboard → Business Insights → Recommendations
+
+The final goal is not just to create charts, but to help management understand sales, customers, products, orders, payments, and customer retention so that they can make data-driven business decisions.
+
+1. Business Areas Covered
+
+The project analyzes five major areas:
+| Area               | What we analyze                                            |
+| ------------------ | ---------------------------------------------------------- |
+| Sales Performance  | Revenue, orders, AOV, sales trends                         |
+| Customer Analytics | Customers, new customers, repeat customers, customer value |
+| Product & Category | Product sales, category revenue, stock, pricing            |
+| Orders & Payments  | Delivered/cancelled orders, payment methods, cancellation  |
+| Customer Retention | Repeat purchases, customer segments, customer value        |
+
+
+2. Dataset / Tables
+
+The project contains four main business entities:
+
+Customers → Orders → Order Items ← Products
+| Table       | Purpose                                       |
+| ----------- | --------------------------------------------- |
+| Customers   | Customer profile and registration information |
+| Products    | Product details, categories, prices and stock |
+| Orders      | Order-level information                       |
+| Order Items | Products purchased within each order          |
+
+3. Data Cleaning
+
+Before analysis, the data must be checked and cleaned using Power Query.
+
+Important checks include:
+
+Duplicate records
+Missing values
+Invalid dates
+Invalid prices
+Incorrect quantities
+Inconsistent categories
+Inconsistent cities
+Invalid customer/product/order IDs
+Unexpected payment methods
+Unexpected order statuses
+
+4.Data Modeling
+
+After cleaning, relationships are created between the tables.
+
+Basic model:
+
+Customers
+    │
+    │ Customer_ID
+    ▼
+ Orders
+    │
+    │ Order_ID
+    ▼
+Order Items
+    │
+    │ Product_ID
+    ▼
+Products
+
+5.Important KPIs
+
+The project requires KPIs for sales, customers, products, and orders.
+
+-->Sales KPIs
+
+Total Revenue
+Total Orders
+Average Order Value
+Total Quantity Sold
+Revenue Growth %
+
+-->Customer KPIs
+
+Total Customers
+New Customers
+Repeat Customers
+Repeat Customer Rate %
+Average Revenue per Customer
+
+-->Product KPIs
+
+Total Products Sold
+Top Product by Revenue
+Top Category by Revenue
+Average Product Price
+Product Quantity Sold
+
+-->Order KPIs
+
+Delivered Orders
+Cancelled Orders
+Cancellation Rate %
+Delivery Rate %
+Orders by Payment Method
+
+6.Power BI Dashboards
+
+The project requires five objective dashboards plus one Executive Summary dashboard.
+
+Dashboard 1 — Sales Performance
+
+Analyzes:
+
+Revenue
+Orders
+AOV
+Revenue trend
+Category performance
+Product performance
+City performance
+
+Dashboard 2 — Customer Analytics
+Analyzes:
+
+Customer count
+New customers
+Repeat customers
+Customer revenue
+Customer segmentation
+Customer distribution by city
+Top customers
+Signup trends
+
+Dashboard 3 — Product & Category Analytics
+Analyzes:
+
+Revenue by category
+Quantity sold
+Top/bottom products
+Stock
+Average selling price
+Category contribution
+
+Dashboard 4 — Orders & Payment Analytics
+Analyzes:
+
+Total orders
+Delivered orders
+Cancelled orders
+Cancellation rate
+Payment methods
+Revenue by payment method
+Cancellation patterns
+
+7.Business Insights
+
+The dashboard should answer questions such as:
+
+Which category generates the highest revenue?
+Which products sell the most?
+Which customers generate the most revenue?
+Which cities generate the most revenue?
+Which payment method is most commonly used?
+Is cancellation a significant issue?
+Which products have low stock?
+Which customers are repeat purchasers?
+Which customer segments contribute the most revenue?
+
+8.Recommendations
+
+Finally, the analysis should convert findings into actionable recommendations, such as:
+
+Focus marketing on high-performing categories.
+Create retention campaigns for repeat customers.
+Investigate segments with high cancellation rates.
+Promote high-performing products.
+Improve inventory planning for high-demand products
